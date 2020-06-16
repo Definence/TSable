@@ -1,8 +1,8 @@
 class User {
-  public name: string
-  private age: number
-  protected nickName: string
-  readonly password: string
+  public name: string // piblic
+  private age: number // visible within class
+  protected nickName: string // visible within inherited classes
+  readonly password: string // readonly
   gender: string = 'male' // default value - not assignable
 
   constructor(name: string, age: number, nickName: string, password: string) {
