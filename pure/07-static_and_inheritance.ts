@@ -36,7 +36,8 @@ yauhen.getPass() // 12345Yavhen30Nick
 abstract class UserBehaviour { // can't create an instance
   constructor(
     public name: string,
-    public age: number
+    public age: number,
+    public nickName?: number,
   ) { }
 
   greet(): void {
