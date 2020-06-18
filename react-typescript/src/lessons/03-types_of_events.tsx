@@ -1,5 +1,9 @@
 import React from 'react'
 
+// AnimationEvent, ChangeEvent, ClipboardEvent, CompositionEvent,
+// DragEvent, FocusEvent, FormEvent, KeyboardEvent, MouseEvent,
+// PointerEvent, TouchEvent, TransitionEvent, WheelEvent
+
 type Props = {
   header: string
 }

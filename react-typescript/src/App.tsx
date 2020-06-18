@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Component from './lessons/03-types_of_events'
+import Component from './lessons/04-elements_typization'
 
 const App = () => <Component />
 
