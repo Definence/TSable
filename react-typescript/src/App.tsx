@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Component from './lessons/04-elements_typization'
+import Component from './lessons/05-portal'
 
 const App = () => <Component />
 
