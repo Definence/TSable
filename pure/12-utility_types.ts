@@ -43,7 +43,7 @@ interface OmitTodo {
   title: string,
   description: string,
   completed: boolean
-}args types
+}
 type OmitTodoPreview = Omit<Todo, 'description'> // removes types from the interface
 const omitTodo: OmitTodoPreview = {
   title: 'Clean room',
