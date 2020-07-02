@@ -25,8 +25,27 @@ const withToggle = <T extends InjectedProps>(PassedComponent: React.ComponentTyp
   }
 }
 
-const ToogleButton = withToggle(Button)
+// const withLoading = <T,>(Component: React.ComponentType<T>) => (props: T) => {
+//   const [loading, toggleLoading] = useState(false)
 
-const App: React.FC = () => <ToogleButton primTitle="Maint Title" secTitle="Additional Title" />
+//   return <Component loading={loading} toggleLoading={toggleLoading} {...props} />
+// }
+
+interface WithLoadingProps {
+  loading: boolean,
+}
+
+const withLoading = <T,>(Component: React.ComponentType<T>) => (
+  class WithLoading extends React.Component<T & WithLoadingProps> {
+    render() {
+      const { loading, ...props } = this.props
+      return loading ? <h1>Loading</h1> : <Component {...props as T} />
+    }
+  }
+)
+
+const ToogleButton = withToggle(withLoading(Button))
+
+const App: React.FC = () => <ToogleButton primTitle='Maint Title' secTitle='Additional Title' />
 
 export default App
