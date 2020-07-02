@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Component from './lessons/09-router'
+import Component from './lessons/10-async'
 
 const App = () => <Component />
 
