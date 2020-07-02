@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Component from './lessons/08-hocs'
+import Component from './lessons/09-router'
 
 const App = () => <Component />
 
